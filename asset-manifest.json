@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nft-marketplace/static/css/main.c4eee2e2.css",
-    "main.js": "/nft-marketplace/static/js/main.4bbf8f8d.js",
+    "main.js": "/nft-marketplace/static/js/main.4c7d961a.js",
     "static/media/Discover.svg": "/nft-marketplace/static/media/Discover.80a2af421cac0d90a811.svg",
     "static/media/Featured.svg": "/nft-marketplace/static/media/Featured.f12f36c57dabcede1698dd04228af1ab.svg",
     "static/media/Avatar.svg": "/nft-marketplace/static/media/Avatar.6f82706bed02ba177c57c9b61bb321df.svg",
@@ -10,7 +10,6 @@
     "static/media/Logo.svg": "/nft-marketplace/static/media/Logo.de21e418744e5e97790651245fb788ca.svg",
     "static/media/lightDisplay.svg": "/nft-marketplace/static/media/lightDisplay.7ceb1bbc91f895f52ef888720ed0aeda.svg",
     "static/media/Notifications.svg": "/nft-marketplace/static/media/Notifications.f90ae864e0bb2b72ff934b4d1e3f72fa.svg",
-    "static/media/Heart.svg": "/nft-marketplace/static/media/Heart.43ad267893f92aa411d172cd0cc6b37e.svg",
     "static/media/Bid.svg": "/nft-marketplace/static/media/Bid.a4dfdd3a723f15c65c8e83d98fc7d320.svg",
     "static/media/Profile.svg": "/nft-marketplace/static/media/Profile.2709b1515bab14ad415e599680229af5.svg",
     "static/media/DashBoard.svg": "/nft-marketplace/static/media/DashBoard.2ec98fd243a2b9645898b2033a6e0a15.svg",
@@ -18,10 +17,10 @@
     "static/media/Logout.svg": "/nft-marketplace/static/media/Logout.fa665664822ca7ac46345b9abaf157a1.svg",
     "static/media/Collection.svg": "/nft-marketplace/static/media/Collection.fe60278ae684b82469304a7f938c199a.svg",
     "main.c4eee2e2.css.map": "/nft-marketplace/static/css/main.c4eee2e2.css.map",
-    "main.4bbf8f8d.js.map": "/nft-marketplace/static/js/main.4bbf8f8d.js.map"
+    "main.4c7d961a.js.map": "/nft-marketplace/static/js/main.4c7d961a.js.map"
   },
   "entrypoints": [
     "static/css/main.c4eee2e2.css",
-    "static/js/main.4bbf8f8d.js"
+    "static/js/main.4c7d961a.js"
   ]
 }
