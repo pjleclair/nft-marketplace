@@ -1,5 +1,5 @@
 import "./content.css"
-import Card from "../card/card"
+import Card from "../card/card.js"
 
 const Content = () => {
     return(
