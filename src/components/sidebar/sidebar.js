@@ -6,9 +6,19 @@ import Collection from "./images/Collection.svg"
 import Profile from "./images/Profile.svg"
 import Settings from "./images/Settings.svg"
 import Logout from "./images/Logout.svg"
+import selectedDashboard from "./images/selectedDashBoard.svg"
+import selectedBid from "./images/selectedBid.svg"
+import selectedCollection from "./images/selectedCollection.svg"
+import selectedProfile from "./images/selectedProfile.svg"
 
 
-const Sidebar = () => {
+const Sidebar = ({selectedComponent, changeComponent}) => {
+    
+    const handleClick = (component) => {
+        console.log(component)
+        changeComponent(component)
+    }
+
     return(
         <nav className="sb--container">
             <div className="sb--icon-container">
@@ -16,11 +26,11 @@ const Sidebar = () => {
                     <img src={Logo} alt="logo"/>
                 </div>
                 <div id="menu">
-                    <img src={Dashboard} alt="icon"/>
-                    <img src={Bid} alt="icon"/>
-                    <img src={Collection} alt="icon"/>
-                    <img src={Profile} alt="icon"/>
-                    <img src={Settings} alt="icon"/>
+                    <img onClick={()=>handleClick('Dashboard')} src={selectedComponent==='Dashboard' ? selectedDashboard : Dashboard} alt="icon"/>
+                    <img onClick={()=>handleClick('Bid')} src={selectedComponent==='Bid' ? selectedBid : Bid} alt="icon"/>
+                    <img onClick={()=>handleClick('Collection')} src={selectedComponent==='Collection' ? selectedCollection : Collection} alt="icon"/>
+                    <img onClick={()=>handleClick('Profile')} src={selectedComponent==='Profile' ? selectedProfile : Profile} alt="icon"/>
+                    <img onClick={()=>handleClick('Settings')} src={Settings} alt="icon"/>
                 </div>
                 <div id="logout">
                     <img src={Logout} alt="icon"/>
