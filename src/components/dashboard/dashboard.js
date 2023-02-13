@@ -1,9 +1,9 @@
-import "./content.css"
+import "./dashboard.css"
 import Card from "../card/card.js"
 import Featured from "./images/Featured.svg"
 import Avatar from "./images/Avatar.svg"
 
-const Content = () => {
+const Dashboard = () => {
     return(
         <main className="cont--container">
             <div className="discover--container">
@@ -69,4 +69,4 @@ const Content = () => {
     )
 }
 
-export default Content;
+export default Dashboard;
