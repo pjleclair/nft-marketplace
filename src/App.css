@@ -2,3 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
+.App {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #131129;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+.card--container {
+    display: flex;
+    flex-direction: column;
+    background: #1D1932;
+    border-radius: 18px;
+    padding: 1.25rem;
+}
+
+button {
+    background: #6F4FF2;
+    border-radius: 9px;
+    height: 2.5rem;
+    width: 15.125rem;
+}

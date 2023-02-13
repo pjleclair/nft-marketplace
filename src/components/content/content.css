@@ -1,0 +1,48 @@
+.cont--container {
+    display: flex;
+    flex-direction: column;
+    height: 78rem;
+    width: 76.25rem;
+    color: #FFFFFF;
+}
+
+.discover--container, .trending, .label {
+    width: 76.25rem;
+}
+
+.discover--container {
+    display: flex;
+    height: 14.25rem;
+    gap: 1.875rem;
+    margin-bottom: 4.313rem;
+}
+
+#explore {
+    height: 14.25rem;
+    width: 37rem;
+    border-radius: 18px;        
+}
+
+.featured {
+    background: #1D1932;
+}
+
+.label {
+    height: 1.3rem;
+    display: flex;
+}
+
+#selector {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.trending {
+    margin-top: 2rem;
+    height: 56rem;
+    display: grid;
+    gap: 1.875rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
