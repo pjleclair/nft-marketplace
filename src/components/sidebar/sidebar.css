@@ -1,7 +1,6 @@
 .sb--container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 5rem;
     background: #1D1932;
     align-items: center;
@@ -11,7 +10,7 @@
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
+    height: 67.5rem;
     width: 5rem;
 
     align-items: center;

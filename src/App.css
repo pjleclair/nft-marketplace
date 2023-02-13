@@ -5,9 +5,11 @@
 
 .App {
     display: flex;
-    height: 100lvh;
-    width: 100lvw;
+    height: 67.5rem;
+    width: 120rem;
     background-color: #131129;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {

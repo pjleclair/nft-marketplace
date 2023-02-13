@@ -168,9 +168,10 @@ button#details {
 
 .trending {
     margin-top: 2rem;
-    height: 56rem;
+    height: 37.313rem;
     display: grid;
     gap: 1.875rem;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-y: auto;
 }

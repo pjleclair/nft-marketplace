@@ -18,7 +18,7 @@ const Card = ({title}) => {
                 <div>3h 1m 50s</div>
                 <div>0.15 ETH</div>
             </div>
-            <button>Place a Bid</button>
+            <button id="bid--button">Place a Bid</button>
         </div>
     )
 }

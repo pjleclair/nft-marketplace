@@ -4,21 +4,30 @@
     background: #1D1932;
     border-radius: 18px;
     padding: 1.25rem;
+    width: 15.125rem;
+    height: 24.5rem;
 }
 
 button {
+    align-self: center;
     background: #6F4FF2;
     border-radius: 9px;
     height: 2.5rem;
     width: 15.125rem;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
 #title {
-    margin-top: 1.875rem;
+    margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -44,7 +53,7 @@ button {
 }
 
 .vals {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.25rem;
     color: #6C7AA0;
     font-size: 16px;
 }
