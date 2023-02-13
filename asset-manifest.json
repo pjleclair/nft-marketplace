@@ -1,14 +1,25 @@
 {
   "files": {
-    "main.css": "/nft-marketplace/static/css/main.efe5d97b.css",
-    "main.js": "/nft-marketplace/static/js/main.bc287249.js",
+    "main.css": "/nft-marketplace/static/css/main.0f381f0b.css",
+    "main.js": "/nft-marketplace/static/js/main.d3215b8e.js",
     "static/media/NFT.svg": "/nft-marketplace/static/media/NFT.d05ce82209d7869614d1f2809d41b781.svg",
+    "static/media/Settings.svg": "/nft-marketplace/static/media/Settings.c8cc8fdd0e6f24c02d02e9833ecea3f2.svg",
+    "static/media/Logo.svg": "/nft-marketplace/static/media/Logo.de21e418744e5e97790651245fb788ca.svg",
+    "static/media/lightDisplay.svg": "/nft-marketplace/static/media/lightDisplay.7ceb1bbc91f895f52ef888720ed0aeda.svg",
+    "static/media/Notifications.svg": "/nft-marketplace/static/media/Notifications.f90ae864e0bb2b72ff934b4d1e3f72fa.svg",
+    "static/media/Heart.svg": "/nft-marketplace/static/media/Heart.43ad267893f92aa411d172cd0cc6b37e.svg",
+    "static/media/Avatar.svg": "/nft-marketplace/static/media/Avatar.6f82706bed02ba177c57c9b61bb321df.svg",
+    "static/media/Bid.svg": "/nft-marketplace/static/media/Bid.a4dfdd3a723f15c65c8e83d98fc7d320.svg",
+    "static/media/Profile.svg": "/nft-marketplace/static/media/Profile.2709b1515bab14ad415e599680229af5.svg",
+    "static/media/DashBoard.svg": "/nft-marketplace/static/media/DashBoard.2ec98fd243a2b9645898b2033a6e0a15.svg",
+    "static/media/Logout.svg": "/nft-marketplace/static/media/Logout.fa665664822ca7ac46345b9abaf157a1.svg",
+    "static/media/Collection.svg": "/nft-marketplace/static/media/Collection.fe60278ae684b82469304a7f938c199a.svg",
     "index.html": "/nft-marketplace/index.html",
-    "main.efe5d97b.css.map": "/nft-marketplace/static/css/main.efe5d97b.css.map",
-    "main.bc287249.js.map": "/nft-marketplace/static/js/main.bc287249.js.map"
+    "main.0f381f0b.css.map": "/nft-marketplace/static/css/main.0f381f0b.css.map",
+    "main.d3215b8e.js.map": "/nft-marketplace/static/js/main.d3215b8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe5d97b.css",
-    "static/js/main.bc287249.js"
+    "static/css/main.0f381f0b.css",
+    "static/js/main.d3215b8e.js"
   ]
 }
