@@ -1,3 +1,7 @@
+button {
+    cursor: pointer;
+}
+
 .cont--container {
     display: flex;
     flex-direction: column;
@@ -18,13 +22,122 @@
 }
 
 #explore {
-    height: 14.25rem;
-    width: 37rem;
+    width: 34.688rem;
     border-radius: 18px;        
 }
 
+.discover {
+    padding: 1.875rem 1.875rem 1.375rem 1.875rem;
+    background-image: url("./images/Discover.svg");
+}
+
+.discover#explore {
+    border-radius: 21px;
+}
+
+.disc--title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+#desc {
+    margin-top: .625rem;
+    margin-bottom: 1.75rem;
+    color: rgba(212, 203, 243, 0.75);
+}
+
+.discover .disc--title, .discover .button--container {
+    width: 17.875rem;
+}
+
+#discover, #create {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;    
+}
+
+#create {
+    background-color: #DC3546;
+}
+
 .featured {
+    display: flex;
     background: #1D1932;
+    padding: 1.25rem;
+    gap: 1.25rem;
+}
+
+#featured {
+    height: 11.688rem;
+}
+
+.ft--container {
+    display: flex;
+    flex-direction: column;
+    width: 17.813rem;
+    height: 11.688rem;
+}
+
+.ft--user-container {
+    display: flex;
+    gap: .813rem;
+    align-items: center;
+    margin-bottom: .926rem;
+}
+
+#status {
+    height: .313rem;
+    width: .313rem;
+    background: #50BA23;
+    border-radius: 10px;
+}
+
+.ft--title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px; 
+    margin-bottom: .563rem;
+}
+
+.ft--auction {
+    display: flex;
+
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#current-bid {
+    display: flex;
+    margin-left: auto;
+    gap: .313rem;
+}
+
+.ft--container .vals {
+    margin-bottom: 1rem;
+}
+
+.button--container {
+    display: flex;
+    gap: 1.25rem;
+    height: 2.5rem;
+}
+
+button#place-bid, button#details {
+    border-radius: 9px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+button#place-bid {
+    background: #6F4FF2;
+}
+
+button#details {
+    background: #DC3546;
 }
 
 .label {
@@ -50,6 +163,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .trending {
