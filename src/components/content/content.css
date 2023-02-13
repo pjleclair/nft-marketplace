@@ -36,6 +36,20 @@
     margin-left: auto;
     display: flex;
     gap: 1rem;
+    font-size: 14px;
+}
+
+#selected {
+    background: #6F4FF2;
+    border-radius: 14px;
+    height: 1.313rem;
+    width: 2.813rem;
+}
+
+.selector--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .trending {

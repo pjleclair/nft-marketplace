@@ -11,20 +11,20 @@ const Content = () => {
             <div className="label">
                 <div>Trending Bids</div>
                 <div id="selector">
-                    <div>All</div>
-                    <div>Artwork</div>
-                    <div>Music</div>
+                    <div id="selected" className="selector--item">All</div>
+                    <div className="selector--item">Artwork</div>
+                    <div className="selector--item">Music</div>
                 </div>
             </div>
             <div className="trending">
                 <Card title="Liquid Wave"/>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card title="Liquid Wave" />
+                <Card title="Liquid Wave" />
+                <Card title="Liquid Wave" />
+                <Card title="Liquid Wave" />
+                <Card title="Liquid Wave" />
+                <Card title="Liquid Wave" />
+                <Card title="Liquid Wave" />
             </div>
         </main>
     )

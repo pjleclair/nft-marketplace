@@ -12,3 +12,39 @@ button {
     height: 2.5rem;
     width: 15.125rem;
 }
+
+#title {
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.info--container {
+    display: flex;
+    flex-direction: column;
+    gap: .688rem;
+    margin-bottom: .313rem;
+    font-size: 14px;
+}
+
+#bid {
+    display: flex;
+    justify-content: right;
+    color: #6F4FF2;
+}
+
+.info, .vals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vals {
+    margin-bottom: 1.875rem;
+    color: #6C7AA0;
+    font-size: 16px;
+}
