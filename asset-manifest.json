@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.efe5d97b.css",
+    "main.js": "/static/js/main.d65e124f.js",
+    "static/media/NFT.svg": "/static/media/NFT.d05ce82209d7869614d1f2809d41b781.svg",
+    "index.html": "/index.html",
+    "main.efe5d97b.css.map": "/static/css/main.efe5d97b.css.map",
+    "main.d65e124f.js.map": "/static/js/main.d65e124f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efe5d97b.css",
+    "static/js/main.d65e124f.js"
+  ]
+}
