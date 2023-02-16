@@ -1,0 +1,60 @@
+.bids--container {
+    display: flex;
+    flex-direction: column;
+
+    color: #FFFFFF;
+
+    height: 78rem;
+    width: 76.25rem;
+}
+
+.label--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#label {
+    display: flex;
+    gap: 10px;    
+}
+
+#home, #bids {
+    color: #6C7AA0;
+}
+
+.activity--container-label {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.125rem 0;
+}
+
+.activity--container {
+    width: 76.25rem;
+}
+
+.activity--label, .activity--panel {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: auto;
+}
+
+.nft--container {
+    display: flex;
+}
+
+#nft {
+    width: 4rem;
+    height: 2.75rem;
+    border-radius: 19px;
+}
+
+.nft--details #name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.offer-container {
+    display: flex;
+    align-items: center;
+}

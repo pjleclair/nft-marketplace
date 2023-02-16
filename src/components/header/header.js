@@ -1,6 +1,6 @@
 import "./header.css"
 
-import Display from "./images/lightDisplay.svg"
+import Display from "./images/darkDisplay.svg"
 import Notifications from "./images/Notifications.svg"
 import Avatar from "./images/Avatar.svg"
 
