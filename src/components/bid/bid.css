@@ -34,12 +34,43 @@
 
 .activity--label, .activity--panel {
     display: grid;
-    grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-columns: .5fr 1.25fr .75fr .75fr 1fr 1fr .5fr;
     grid-template-rows: auto;
+    align-items: center;
+}
+
+.activity--label input, .activity--panel input {
+    width: .75rem;
+    height: .75rem;
+}
+
+.activity--div {
+    width: 76.25rem;
+    border: 0.3px solid #6C7AA0;
+    margin-top: .688rem;
+    margin-bottom: 1.875rem;
+}
+
+.activity--label {
+    width: 75rem;
+    padding: 0 .75rem;
+}
+
+.activity--panel {
+    background: #1D1932;
+    border-radius: 18px;
+    padding: .5rem .75rem;
+}
+
+.panel--container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .nft--container {
     display: flex;
+    gap: .625rem;
 }
 
 #nft {
@@ -57,4 +88,14 @@
 .offer-container {
     display: flex;
     align-items: center;
+    gap: .625rem;
+}
+
+#X {
+    display: flex;
+    justify-content: center;
+}
+
+.activity--panel #X {
+    cursor: pointer;
 }
