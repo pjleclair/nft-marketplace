@@ -1,5 +1,5 @@
 import "./dashboard.css"
-import Card from "../card/card.js"
+import Trending from "../trending/trending.js"
 import Featured from "./images/Featured.svg"
 import Avatar from "./images/Avatar.svg"
 
@@ -55,16 +55,7 @@ const Dashboard = () => {
                     <div className="selector--item">Music</div>
                 </div>
             </div>
-            <div className="trending">
-                <Card title="Liquid Wave"/>
-                <Card title="Liquid Wave" />
-                <Card title="Liquid Wave" />
-                <Card title="Liquid Wave" />
-                <Card title="Liquid Wave" />
-                <Card title="Liquid Wave" />
-                <Card title="Liquid Wave" />
-                <Card title="Liquid Wave" />
-            </div>
+            <Trending />
         </main>
     )
 }
