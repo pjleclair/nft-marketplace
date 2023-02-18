@@ -29,9 +29,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+    column-gap: 1.875rem;
 }
 
 .purchase--container, .profile--container .collection--container {
     display: flex;
     flex-direction: row;
+    gap: 1.875rem;
+}
+
+#profile-label {
+    margin-top: 3.125rem;
+    margin-bottom: 1.875rem;
+}
+
+#purchased, #collection {
+    display: flex;
+    flex-direction: column;
 }

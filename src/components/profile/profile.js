@@ -20,7 +20,7 @@ const Profile = () => {
 
     const Purchased = () => {
         return(
-            <div>
+            <div id="purchased">
                 <img alt="purchased"/>
                 <img alt="pfp"/>
                 <div>Liquid Wave</div>
@@ -30,7 +30,7 @@ const Profile = () => {
 
     const Collection = () => {
         return(
-            <div>
+            <div id="collection">
                 <img alt="collection"/>
                 <img alt="pfp"/>
                 <div>Liquid Wave</div>
@@ -77,7 +77,7 @@ const Profile = () => {
                 </div>
             </div>
 
-            <div className="label--container">
+            <div id="profile-label" className="label--container">
                 <div>Recently Purchased NFTs</div>
             </div>
             <div className="purchase--container">
@@ -86,7 +86,7 @@ const Profile = () => {
                 <Purchased />
                 <Purchased />
             </div>
-            <div className="label--container">
+            <div id="profile-label" className="label--container">
                 <div>My Collections</div>
             </div>
             <div className="collection--container">
