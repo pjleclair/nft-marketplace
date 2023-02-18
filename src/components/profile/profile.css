@@ -1,0 +1,37 @@
+.profile--container {
+    display: flex;
+    flex-direction: column;
+    height: 59.125rem;
+    width: 76.25rem;
+    color: #FFFFFF;
+}
+
+
+.label--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#label {
+    display: flex;
+    gap: 10px;    
+}
+
+#home, #profile {
+    color: #6C7AA0;
+}
+
+.account--info {
+    display: flex;
+}
+
+.following--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.purchase--container, .profile--container .collection--container {
+    display: flex;
+    flex-direction: row;
+}
