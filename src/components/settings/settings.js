@@ -13,7 +13,7 @@ const Settings = () => {
                         <div id="collections">Settings</div>
                     </div>
                 </div>
-                <div id="selector">
+                <div className="settings" id="selector">
                     <div id="selected" className="selector--item">Profile</div>
                     <div className="selector--item">Application</div>
                     <div className="selector--item">Security</div>
@@ -21,34 +21,39 @@ const Settings = () => {
                     <div className="selector--item">Payment Method</div>
                     <div className="selector--item">API</div>
                 </div>
-                <div className="user--container">
-                    <div>
-                        <div>User profile</div>
-                        <div>
-                            <div>Full name</div>
-                            <input />
+                <div className="user-update--container">
+                    <div className="user--container">
+                        <div id="label">User profile</div>
+                        <div className="user-info">
                             <div>
-                                <img alt="pfp"/>
+                                <div>Full name</div>
+                                <input />
                                 <div>
-                                    <div>John Smith</div>
-                                    <div>Welcome setting page</div>
+                                    <img alt="pfp"/>
+                                    <div>
+                                        <div>John Smith</div>
+                                        <div>Welcome setting page</div>
+                                    </div>
                                 </div>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="profile--container">
+                        <div id="label">Update profile</div>
+                        <div className="update-profile">
+                            <div>
+                                <div>Email</div>
+                                <input />
+                                <div>Password</div>
+                                <input />
                             </div>
                             <button>Save</button>
                         </div>
                     </div>
-                    <div>
-                        <div>Update profile</div>
-                        <div>
-                            <div>Email</div>
-                            <input />
-                            <div>Password</div>
-                            <input />
-                        </div>
-                        <button>Save</button>
-                    </div>
                 </div>
                 <div className="personal--info">
+                    <div>Personal Information</div>
                     <div className="info--container">
                         <div>
                             <div>Info</div>

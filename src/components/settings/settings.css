@@ -1,9 +1,24 @@
-.user--container {
-    display: flex;
+.settings#selector {
+    margin: 1.875rem 0 3.125rem 0;
 }
 
-.info--container {
+#label {
+    margin-bottom: 1.25rem;
+}
+
+.user-update--container {
+    display: flex;
+    gap: 2.813rem;
+    margin-bottom: 3.125rem;
+}
+
+.personal--info .info--container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.update-profile, .user-info {
+    background: #1D1932;
+    border-radius: 12px;
 }
