@@ -1,3 +1,7 @@
+.settings--container {
+    color: #FFFFFF;
+}
+
 .page-header {
     display: flex;
     flex-direction: column;
@@ -86,6 +90,10 @@
 
 .personal--info button {
     margin-top: 1rem;
+}
+
+.settings--container button {
+    width: 5.75rem;
 }
 
 #info {

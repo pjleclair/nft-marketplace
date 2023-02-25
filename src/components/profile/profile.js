@@ -1,15 +1,20 @@
 import "./profile.css"
+import pfp from "../header/images/Avatar.svg"
+import Verify from "./images/Verify.svg"
+import TWOFA from "./images/2FA.svg"
+import Avatar from "./images/Avatar.svg"
+import NFT from "../card/images/NFT.svg"
 
 const Profile = () => {
     const unverif = "Looks like you are not verified yet. Verify yourself to use the full potential of NFT Marketplace."
 
     const Following = () => {
         return(
-            <div>
-                <div>
-                    <img alt="pfp"/>
+            <div className="following--container">
+                <div className="following">
+                    <img src={Avatar} alt="pfp"/>
                     <div>
-                        <div>Papaya</div>
+                        <h1>Papaya</h1>
                         <div>60 items</div>
                     </div>
                 </div>
@@ -21,9 +26,9 @@ const Profile = () => {
     const Purchased = () => {
         return(
             <div id="purchased">
-                <img alt="purchased"/>
-                <img alt="pfp"/>
-                <div>Liquid Wave</div>
+                <img id="nft" src={NFT} alt="purchased"/>
+                <img id="pfp" src={Avatar} alt="pfp"/>
+                <h1>Liquid Wave</h1>
             </div>
         )
     }
@@ -31,9 +36,9 @@ const Profile = () => {
     const Collection = () => {
         return(
             <div id="collection">
-                <img alt="collection"/>
-                <img alt="pfp"/>
-                <div>Liquid Wave</div>
+                <img id="nft" src={NFT} alt="collection"/>
+                <img id="pfp" src={Avatar} alt="pfp"/>
+                <h1>Liquid Wave</h1>
             </div>
         )
     }
@@ -50,25 +55,25 @@ const Profile = () => {
                 </div>
             </div>
             <div className="account--info">
-                <div>
-                    <img />
-                    <h1>Welcome, John Smith</h1>
-                    <div>
+                <div className="verif--container">
+                    <img src={pfp} alt="pfp"/>
+                    <h1>Welcome, Jane Doe</h1>
+                    <div className="verif--desc">
                         {unverif}
                     </div>
-                    <div>
-                        <img />
+                    <div className="verif--action">
+                        <img src={Verify} alt="verify"/>
                         <div>Verify account</div>
                     </div>
-                    <div></div>
-                    <div>
-                        <img />
+                    <div id="divider"></div>
+                    <div className="verif--action">
+                        <img src={TWOFA} alt="2fa"/>
                         <div>Two-factor Authentication (2FA)</div>
                     </div>
                 </div>
                 <div>
                     <h1>Following</h1>
-                    <div className="following--container">
+                    <div className="following--element-container">
                         <Following />
                         <Following />
                         <Following />
@@ -78,7 +83,7 @@ const Profile = () => {
             </div>
 
             <div id="profile-label" className="label--container">
-                <div>Recently Purchased NFTs</div>
+                <h1>Recently Purchased NFTs</h1>
             </div>
             <div className="purchase--container">
                 <Purchased />
@@ -87,7 +92,7 @@ const Profile = () => {
                 <Purchased />
             </div>
             <div id="profile-label" className="label--container">
-                <div>My Collections</div>
+                <h1>My Collections</h1>
             </div>
             <div className="collection--container">
                 <Collection />

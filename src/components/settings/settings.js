@@ -1,9 +1,9 @@
 import "./settings.css"
-import pfp from "./images/User.svg"
+import pfp from "../header/images/Avatar.svg"
 
 const Settings = () => {
     return (
-        <main className="collection--container">
+        <main className="settings--container">
             <div className="page-header">
                 <h4>Settings</h4>
                 <div className="label--container">
@@ -33,8 +33,8 @@ const Settings = () => {
                             <div className="pfp-container">
                                 <img src={pfp} alt="pfp"/>
                                 <div id="user">
-                                    <h5>John Smith</h5>
-                                    <div>Welcome setting page</div>
+                                    <h5>Jane Doe</h5>
+                                    <div>Welcome to the settings page</div>
                                 </div>
                             </div>
                             <button>Save</button>
