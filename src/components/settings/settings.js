@@ -1,9 +1,24 @@
 import "./settings.css"
 import pfp from "../header/images/Avatar.svg"
 
-const Settings = () => {
+const Settings = ({displayMode}) => {
+
+    let settingsContainer, userInfoClass, updateProfileClass, personalInfoClass
+
+    if (displayMode === 'dark') {
+        settingsContainer = "settings--container"
+        userInfoClass = "user-info"
+        updateProfileClass = "update-profile"
+        personalInfoClass = "personal--info"
+    } else {
+        settingsContainer = "settings--container-lm"
+        userInfoClass = "user-info-lm"
+        updateProfileClass = "update-profile-lm"
+        personalInfoClass = "personal--info-lm"
+    }
+
     return (
-        <main className="settings--container">
+        <main className={settingsContainer}>
             <div className="page-header">
                 <h4>Settings</h4>
                 <div className="label--container">
@@ -26,7 +41,7 @@ const Settings = () => {
             <div className="user-update--container">
                 <div className="user--container">
                     <h4 id="label">User profile</h4>
-                    <div className="user-info">
+                    <div className={userInfoClass}>
                         <div>
                             <div>Full name</div>
                             <input />
@@ -43,7 +58,7 @@ const Settings = () => {
                 </div>
                 <div className="profile--container">
                     <h4 id="label">Update profile</h4>
-                    <div className="update-profile">
+                    <div className={updateProfileClass}>
                         <div>
                             <div>Email</div>
                             <input />
@@ -54,7 +69,7 @@ const Settings = () => {
                     </div>
                 </div>
             </div>
-            <div className="personal--info">
+            <div className={personalInfoClass}>
                 <h4>Personal Information</h4>
                 <div className="info--container">
                     <div id="info">

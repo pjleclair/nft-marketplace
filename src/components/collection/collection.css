@@ -8,6 +8,18 @@
     width: 76.25rem;
 }
 
+/* light mode: */
+
+.collection--container-lm {
+    display: flex;
+    flex-direction: column;
+
+    color: #000;
+
+    height: 59.125rem;
+    width: 76.25rem;
+}
+
 .label--container {
     display: flex;
     justify-content: space-between;
@@ -27,6 +39,17 @@
 }
 
 .collection--container .trending {
+    height: 50.438rem;
+    margin-top: 0;
+}
+
+/* light mode: */
+
+.collection--container-lm #selector {
+    margin: 3.125rem 0 1.25rem 0;
+}
+
+.collection--container-lm .trending {
     height: 50.438rem;
     margin-top: 0;
 }

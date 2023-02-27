@@ -7,11 +7,20 @@ main.profile--container {
     overflow-y: auto;
 }
 
-main.profile--container img {
+main.profile--container-lm {
+    display: flex;
+    flex-direction: column;
+    height: 59.125rem;
+    width: 76.25rem;
+    color: #000;
+    overflow-y: auto;
+}
+
+main.profile--container img, main.profile--container-lm img {
     width: 2.75rem;
 }
 
-main.profile--container h1 {
+main.profile--container h1, main.profile--container-lm h1 {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -40,6 +49,15 @@ main.profile--container h1 {
     display: flex;
     flex-direction: column;
     background: #1D1932;
+    border-radius: 12px;
+    padding: 1.25rem;
+    width: 21.25rem;
+}
+
+.verif--container-lm {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
     border-radius: 12px;
     padding: 1.25rem;
     width: 21.25rem;
@@ -78,7 +96,7 @@ main.profile--container h1 {
     margin-top: 1.25rem;
 }
 
-.purchase--container, .profile--container .collection--container {
+.purchase--container, .profile--container .collection--container, .profile--container-lm .collection--container {
     display: flex;
     flex-direction: row;
     gap: 1.875rem;
@@ -90,6 +108,11 @@ main.profile--container h1 {
 }
 
 #purchased, #collection {
+    display: flex;
+    flex-direction: column;
+}
+
+#purchased-lm, #collection-lm {
     display: flex;
     flex-direction: column;
 }
@@ -108,7 +131,16 @@ main.profile--container h1 {
     width: 22.5rem;
 }
 
-.following--container button {
+.following--container-lm {
+    display: flex;
+    gap: 5.625rem;
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 1.125rem 1.25rem 1.125rem 1.25rem;
+    width: 22.5rem;
+}
+
+.following--container button, .following--container-lm button {
     width: 6.125rem;
     height: 2.5rem;
     background: #DC3546;
@@ -123,6 +155,15 @@ main.profile--container h1 {
     width: 17.625rem;
 }
 
+#collection-lm, #purchased-lm {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 1.25rem;
+    height: 13.5rem;
+    width: 17.625rem;
+    color: #000;
+}
+
 #purchased #nft, #collection #nft {
     border-radius: 19px;
     height: 11.75rem;
@@ -130,7 +171,18 @@ main.profile--container h1 {
     z-index: 1;
 }
 
+#purchased-lm #nft, #collection-lm #nft {
+    border-radius: 19px;
+    height: 11.75rem;
+    width: 15.25rem;
+    z-index: 1;
+}
+
 #collection h1, #purchased h1 {
+    margin-top: -2.5rem;
+}
+
+#collection-lm h1, #purchased-lm h1 {
     margin-top: -2.5rem;
 }
 

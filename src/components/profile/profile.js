@@ -5,12 +5,12 @@ import TWOFA from "./images/2FA.svg"
 import Avatar from "./images/Avatar.svg"
 import NFT from "../card/images/NFT.svg"
 
-const Profile = () => {
+const Profile = ({displayMode}) => {
     const unverif = "Looks like you are not verified yet. Verify yourself to use the full potential of NFT Marketplace."
 
     const Following = () => {
         return(
-            <div className="following--container">
+            <div className={followingContainerClass}>
                 <div className="following">
                     <img src={Avatar} alt="pfp"/>
                     <div>
@@ -25,7 +25,7 @@ const Profile = () => {
 
     const Purchased = () => {
         return(
-            <div id="purchased">
+            <div id={purchasedId}>
                 <img id="nft" src={NFT} alt="purchased"/>
                 <img id="pfp" src={Avatar} alt="pfp"/>
                 <h1>Liquid Wave</h1>
@@ -35,7 +35,7 @@ const Profile = () => {
 
     const Collection = () => {
         return(
-            <div id="collection">
+            <div id={collectionId}>
                 <img id="nft" src={NFT} alt="collection"/>
                 <img id="pfp" src={Avatar} alt="pfp"/>
                 <h1>Liquid Wave</h1>
@@ -43,8 +43,24 @@ const Profile = () => {
         )
     }
 
+    let profileContainerClass, verifContainerClass, followingContainerClass, purchasedId, collectionId
+
+    if (displayMode === 'dark') {
+        profileContainerClass = "profile--container"
+        verifContainerClass = "verif--container"
+        followingContainerClass = "following--container"
+        purchasedId = "purchased"
+        collectionId = "collection"
+    } else {
+        profileContainerClass = "profile--container-lm"
+        verifContainerClass = "verif--container-lm"
+        followingContainerClass = "following--container-lm"
+        purchasedId = "purchased-lm"
+        collectionId = "collection-lm"
+    }
+
     return (
-        <main className="profile--container">
+        <main className={profileContainerClass}>
             <h1>Profile</h1>
             <div className="label--container">
                 <div>Welcome to your Profile</div>
@@ -55,7 +71,7 @@ const Profile = () => {
                 </div>
             </div>
             <div className="account--info">
-                <div className="verif--container">
+                <div className={verifContainerClass}>
                     <img src={pfp} alt="pfp"/>
                     <h1>Welcome, Jane Doe</h1>
                     <div className="verif--desc">
