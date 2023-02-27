@@ -3,13 +3,28 @@ import Trending from "../trending/trending.js"
 import Featured from "./images/Featured.svg"
 import Avatar from "./images/Avatar.svg"
 
-const Dashboard = () => {
+const Dashboard = ({displayMode}) => {
+
+    let featuredClass
+    let contContainerClass
+    let discTitleClass
+    
+    if (displayMode === 'dark') {
+        featuredClass = "featured"
+        contContainerClass = "cont--container"
+        discTitleClass = "disc--title"
+    } else {
+        featuredClass = "featured-lm"
+        contContainerClass = "cont--container-lm"
+        discTitleClass = "disc--title-lm"
+    }
+
     return(
-        <main className="cont--container">
+        <main className={contContainerClass}>
             <div className="discover--container">
                 <div id="explore" className="discover">
-                    <div className="disc--title">
-                        Discover, Collect, Sell and Create your NFT
+                    <div className={discTitleClass}>
+                        Discover, Collect, Sell, and Create your NFT
                     </div>
                     <div id="desc">
                         Digital marketplace for crypto collectibles and non-fungible tokens
@@ -19,7 +34,7 @@ const Dashboard = () => {
                         <button id="create">Create</button>
                     </div>
                 </div>
-                <div id="explore" className="featured">
+                <div id="explore" className={featuredClass}>
                     <img id="featured" src={Featured} alt="featured"/>
                     <div className="ft--container">
                         <div className="ft--user-container">
@@ -55,7 +70,7 @@ const Dashboard = () => {
                     <div className="selector--item">Music</div>
                 </div>
             </div>
-            <Trending />
+            <Trending displayMode={displayMode}/>
         </main>
     )
 }

@@ -10,6 +10,14 @@ button {
     color: #FFFFFF;
 }
 
+.cont--container-lm {
+    display: flex;
+    flex-direction: column;
+    height: 78rem;
+    width: 76.25rem;
+    color: #000;
+}
+
 .discover--container, .trending, .label {
     width: 76.25rem;
 }
@@ -41,6 +49,13 @@ button {
     line-height: 39px;
 }
 
+.disc--title-lm {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
 #desc {
     margin-top: .625rem;
     margin-bottom: 1.75rem;
@@ -67,6 +82,14 @@ button {
     background: #1D1932;
     padding: 1.25rem;
     gap: 1.25rem;
+}
+
+.featured-lm {
+    display: flex;
+    background: #FFFFFF;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    color: #000;
 }
 
 #featured {
@@ -154,6 +177,7 @@ button#details {
 
 #selected {
     background: #6F4FF2;
+    color: #FFFFFF;
     border-radius: 14px;
     height: 1.313rem;
     width: 2.813rem;

@@ -1,15 +1,38 @@
 import "./header.css"
 
 import Display from "./images/darkDisplay.svg"
+import lmDisplay from "./images/lightDisplay.svg"
 import Notifications from "./images/Notifications.svg"
 import Avatar from "./images/Avatar.svg"
 
-const Header = () => {
+const Header = ({displayMode, setDisplayMode}) => {
+
+    let displayIcon
+    let searchId
+    
+    const handleClick = () => {
+        if (displayMode === 'dark') {
+            displayIcon = lmDisplay
+            setDisplayMode('light')
+        } else {
+            displayIcon = Display
+            setDisplayMode('dark')
+        }
+    }
+
+    if (displayMode === 'dark') {
+        searchId = 'search'
+        displayIcon = Display
+    } else {
+        searchId = 'search-lm'
+        displayIcon = lmDisplay
+    }
+
     return(
         <header className="header--container">
-            <input id="search" type="search" placeholder="Search..."/>
+            <input id={searchId} type="search" placeholder="Search..."/>
             <div className="img--container">
-                <img src={Display} alt="display"/>
+                <img onClick={handleClick} src={displayIcon} alt="display"/>
                 <img src={Notifications} alt="notifs"/>
                 <img src={Avatar} alt="user"/>
             </div>

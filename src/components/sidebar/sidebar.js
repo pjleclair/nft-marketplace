@@ -12,15 +12,22 @@ import selectedCollection from "./images/selectedCollection.svg"
 import selectedProfile from "./images/selectedProfile.svg"
 
 
-const Sidebar = ({selectedComponent, changeComponent}) => {
+const Sidebar = ({selectedComponent, changeComponent, displayMode}) => {
     
     const handleClick = (component) => {
         console.log(component)
         changeComponent(component)
     }
 
+    let containerClass
+    if (displayMode === 'dark') {
+        containerClass = "sb--container"
+    } else {
+        containerClass = "sb--container-lm"
+    }
+
     return(
-        <nav className="sb--container">
+        <nav className={containerClass}>
             <div className="sb--icon-container">
                 <div id="logo">
                     <img src={Logo} alt="logo"/>

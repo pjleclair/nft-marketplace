@@ -12,20 +12,42 @@ import React from 'react'
 function App() {
 
   const [selectedComponent, setSelectedComponent] = React.useState('Dashboard')
+  const [displayMode, setDisplayMode] = React.useState('dark')
+
+  let containerClass
+  if (displayMode === 'dark') {
+    containerClass = "App"
+  } else {
+    containerClass = "App-lm"
+  }
 
   return (
-    <div className="App">
+    <div className={containerClass}>
       <Sidebar
         selectedComponent={selectedComponent}
         changeComponent={setSelectedComponent}
+        displayMode={displayMode}
       />
       <div className="container">
-        <Header />
-        {selectedComponent === 'Dashboard' && <Dashboard />}
-        {selectedComponent === 'Bid' && <Bid />}
-        {selectedComponent === 'Collection' && <Collection />}
-        {selectedComponent === 'Profile' && <Profile />}
-        {selectedComponent === 'Settings' && <Settings />}
+        <Header 
+          displayMode={displayMode}
+          setDisplayMode={setDisplayMode}
+        />
+        {selectedComponent === 'Dashboard' && <Dashboard 
+          displayMode={displayMode}
+        />}
+        {selectedComponent === 'Bid' && <Bid 
+          displayMode={displayMode}
+        />}
+        {selectedComponent === 'Collection' && <Collection 
+          displayMode={displayMode}
+        />}
+        {selectedComponent === 'Profile' && <Profile 
+          displayMode={displayMode}
+        />}
+        {selectedComponent === 'Settings' && <Settings 
+          displayMode={displayMode}
+        />}
       </div>
     </div>
   );

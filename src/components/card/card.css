@@ -8,6 +8,18 @@
     height: 24.5rem;
 }
 
+.card--container-lm {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    color: #000;
+
+    border-radius: 18px;
+    padding: 1.25rem;
+    width: 15.125rem;
+    height: 24.5rem;
+}
+
 button {
     align-self: center;
     background: #6F4FF2;

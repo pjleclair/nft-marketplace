@@ -12,6 +12,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.App-lm {
+    display: flex;
+    height: 67.5rem;
+    width: 120rem;
+    background-color: #BCBCBC;
+
+    font-family: 'Poppins', sans-serif;
+}
+
 .container {
     display: flex;
     flex-direction: column;

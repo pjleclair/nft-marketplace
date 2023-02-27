@@ -3,7 +3,7 @@ import React from "react"
 import "./trending.css"
 
 
-const Trending = ({nfts}) => {
+const Trending = ({displayMode}) => {
 
     // const trendingCards = 
     //     nfts.map((obj) => {
@@ -18,14 +18,14 @@ const Trending = ({nfts}) => {
     return(
         <div className="trending">
                 {/* {trendingCards} */}
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card displayMode={displayMode} />
+                <Card displayMode={displayMode} />
+                <Card displayMode={displayMode} />
+                <Card displayMode={displayMode} />
+                <Card displayMode={displayMode} />
+                <Card displayMode={displayMode} />
+                <Card displayMode={displayMode} />
+                <Card displayMode={displayMode} />
         </div>
     )
 }

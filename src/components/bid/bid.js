@@ -2,11 +2,11 @@ import "./bid.css"
 import NFT from "./images/NFT.svg"
 import Avatar from "./images/Avatar.svg"
 
-const Bid = () => {
+const Bid = ({displayMode}) => {
 
     const Panel = () => {
         return(
-            <div className="activity--panel">
+            <div className={panelClass}>
                 <input type="checkbox"/>
                 <div className="nft--container">
                     <img id="nft" src={NFT} alt="nft"/>
@@ -27,8 +27,19 @@ const Bid = () => {
         )
     }
 
+    let bidClass
+    let panelClass
+
+    if (displayMode === 'dark') {
+        bidClass = "bids--container"
+        panelClass = "activity--panel"
+    } else {
+        bidClass = "bids--container-lm"
+        panelClass = "activity--panel-lm"
+    }
+
     return (
-        <main className="bids--container">
+        <main className={bidClass}>
             <div>
                 <h1>Bids</h1>
                 <div className="label--container">

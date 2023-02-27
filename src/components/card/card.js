@@ -1,12 +1,20 @@
 import "./card.css"
 import NFT from "./images/NFT.svg"
 
-const Card = ({title}) => {
+const Card = ({title, displayMode}) => {
+
+    let cardContainerClass
+
+    if (displayMode === 'dark') {
+        cardContainerClass = "card--container"
+    } else {
+        cardContainerClass = "card--container-lm"
+    }
     
     return (
-        <div className="card--container">
+        <div className={cardContainerClass}>
             <img src={NFT} alt="nft"/>
-            <div id="title">{title}</div>
+            <div id="title">{title || "Liquid Wave"}</div>
             <div className="info--container">
                 <div className="info">
                     <div>Auction Time</div>

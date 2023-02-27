@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+.sb--container-lm {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    background: #FFFFFF;
+    align-items: center;
+}
+
 .sb--icon-container {
     display: flex;
     flex-direction: column;

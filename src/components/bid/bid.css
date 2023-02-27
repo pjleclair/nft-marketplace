@@ -8,6 +8,16 @@
     width: 76.25rem;
 }
 
+.bids--container-lm {
+    display: flex;
+    flex-direction: column;
+
+    color: #000;
+
+    height: 78rem;
+    width: 76.25rem;
+}
+
 .label--container {
     display: flex;
     justify-content: space-between;
@@ -32,14 +42,14 @@
     width: 76.25rem;
 }
 
-.activity--label, .activity--panel {
+.activity--label, .activity--panel, .activity--panel-lm {
     display: grid;
     grid-template-columns: .5fr 1.25fr .75fr .75fr 1fr 1fr .5fr;
     grid-template-rows: auto;
     align-items: center;
 }
 
-.activity--label input, .activity--panel input {
+.activity--label input, .activity--panel input, .activity--panel-lm input {
     width: .75rem;
     height: .75rem;
 }
@@ -58,6 +68,12 @@
 
 .activity--panel {
     background: #1D1932;
+    border-radius: 18px;
+    padding: .5rem .75rem;
+}
+
+.activity--panel-lm {
+    background: #FFFFFF;
     border-radius: 18px;
     padding: .5rem .75rem;
 }

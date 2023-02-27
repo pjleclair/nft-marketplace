@@ -17,6 +17,13 @@
     height: 3.125rem;
 }
 
+#search-lm {
+    background: #FFFFFF;
+    border-radius: 12px;    
+    width: 23.75rem;
+    height: 3.125rem;
+}
+
 .img--container {
     display: flex;
     gap: 1rem;
