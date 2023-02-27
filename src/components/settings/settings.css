@@ -133,6 +133,10 @@
     width: 5.75rem;
 }
 
+.settings--container-lm button {
+    width: 5.75rem;
+}
+
 #info {
     width: 35rem;
     height: 4.375rem;

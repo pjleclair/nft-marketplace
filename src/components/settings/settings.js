@@ -96,8 +96,8 @@ const Settings = ({displayMode}) => {
                         <div>Info</div>
                         <input />
                     </div>
+                    <button>Save</button>
                 </div>
-                <button>Save</button>
             </div>
         </main>
 )}
