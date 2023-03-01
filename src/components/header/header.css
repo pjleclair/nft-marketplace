@@ -15,6 +15,7 @@
     border-radius: 12px;    
     width: 23.75rem;
     height: 3.125rem;
+    padding: .625rem;
 }
 
 #search-lm {
@@ -22,6 +23,7 @@
     border-radius: 12px;    
     width: 23.75rem;
     height: 3.125rem;
+    padding: .625rem;
 }
 
 .img--container {

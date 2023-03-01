@@ -62,7 +62,7 @@ button {
     color: rgba(212, 203, 243, 0.75);
 }
 
-.discover .disc--title, .discover .button--container {
+.discover .disc--title,.discover .disc--title-lm, .discover .button--container {
     width: 17.875rem;
 }
 
